@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* OLD VARIABLES */
+
+  /* --color-p_ruby: #e0115f;
+  --color-p_ruby-disable: #7d0a36;
+  --color-p_ruby-hover: #b00e4c;
+  --color-s_yellow: #ffc700;
+  --color-s_yellow-old: #a67c52;
+  --color-black: #000000;
+  --color-negro: #000000;
+  --color-grey: #c4c4c4;
+  --color-white: #ffffff;
+  --color-blanco: #ffffff;
+
+  --spacing-icon_collab-rrss: 2.5rem;
+  --spacing-icon_other: 3.125rem;
+  --spacing-icon_logo: 3.75rem;
+
+  --leading-light: 1.5rem;
+  --leading-regular: 1.875rem;
+  --leading-h2: 3rem;
+  --leading-h3: 3rem;
+  --leading-h1: 4.5rem;
+
+  --text-light: 1rem;
+  --text-regular: 1.25rem;
+  --text-h3: 1.625rem;
+  --text-h2: 2.625rem;
+  --text-h1: 4.25rem;
+
+  --font-outfit: "Outfit";
+
+  --font-weight-bold: bold;
+  --font-weight-semibold: semibold;
+  --font-weight-light: light;
+  --font-weight-medium: medium;
+  --font-weight-regular: regular; */
+
+
+
+  --color-plight_ruby: #e0115f;
+  --color-s_yellow: #ffc700;
+  --color-plight_rubyhover: #b00e4c;
+  --color-plight_rubydisable: #7d0a36;
+  --color-s_yellowold: #a67c52;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #c4c4c4;
+  --color-pdark_smoke: #333333;
+  --color-pdark_smoke_gradiant: #83123e;
+  --color-pdark_smokehover: #444444;
+  --color-pdark_smokedisable: #666666;
+
+  --container-iconcollabrrss: 40px;
+  --container-iconcollabrrss_rem: 2.5rem;
+  --container-iconlogo: 60px;
+  --container-iconlogo_rem: 3.75rem;
+  --container-iconother: 50px;
+  --container-iconother_rem: 3.125rem;
+
+  --font-outfit: "Outfit";
+
+  --text-h1: 68px;
+  --text-h1_rem: 4.25rem;
+  --text-h2: 42px;
+  --text-h2_rem: 2.625rem;
+  --text-h3: 26px;
+  --text-h3-_em: 1.625rem;
+  --text-regular: 20px;
+  --text-regular_rem: 1.25rem;
+  --text-light: 16px;
+  --text-light_rem: 1rem;
+
+  --leading-h1: 72px;
+  --leading-h1-rem: 4.5rem;
+  --leading-h2: 48px;
+  --leading-h2-rem: 3rem;
+  --leading-h3: 48px;
+  --leading-h3-rem: 3rem;
+  --leading-regular: 30px;
+  --leading-regular-rem: 1.875rem;
+  --leading-light: 24px;
+  --leading-light-rem: 1.5rem;
+
+  --font-weight-bold: "bold";
+  --font-weight-semibold: "semibold";
+  --font-weight-regular: "regular";
+  --font-weight-medium: "medium";
+  --font-weight-light: "light";
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body {
+  font-family: var(--font-outfit);
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.sda{
+  box-shadow: rgba(255, 254, 254) 20px 20px 1px;
+  
+  --color-pdark_smoke: #83123e;
+}
