@@ -41,8 +41,6 @@
   --font-weight-medium: medium;
   --font-weight-regular: regular; */
 
-
-
   --color-plight_ruby: #e0115f;
   --color-s_yellow: #ffc700;
   --color-plight_rubyhover: #b00e4c;
@@ -92,6 +90,51 @@
   --font-weight-regular: "regular";
   --font-weight-medium: "medium";
   --font-weight-light: "light";
+
+  Mode 1: {
+    color: {
+      'pdark-smoke': '#333333',
+      'pdark-smoke-disable': '#666666',
+      'pdark-smoke-hover': '#444444',
+      'plight-ruby': '#e0115f',
+      'plight-ruby-disable': '#7d0a36',
+      'plight-ruby-hover': '#b00e4c',
+      's-yellow': '#ffc700',
+      's-yellow-old': '#a67c52',
+      'black': '#000000',
+      'grey': '#c4c4c4',
+      'white': '#ffffff',
+    },
+  },
+  Mode 1: {
+    number: {
+      'icon-collab-rrss': '2.5rem',
+      'icon-other': '3.125rem',
+      'icon-logo': '3.75rem',
+    },
+  },
+  Mode 1: {
+    number: {
+      'lineheight-light': '1.5rem',
+      'lineheight-regular': '1.875rem',
+      'lineheight-h2': '3rem',
+      'lineheight-h3': '3rem',
+      'lineheight-h1': '4.5rem',
+      'size-light': '1rem',
+      'size-regular': '1.25rem',
+      'size-h3': '1.625rem',
+      'size-h2': '2.625rem',
+      'size-h1': '4.25rem',
+    },
+    string: {
+      'family-outfit': 'Outfit',
+      'weight-bold': 'bold',
+      'weight-semibold': 'semibold',
+      'weight-light': 'light',
+      'weight-medium': 'medium',
+      'weight-regular': 'regular',
+    },
+  },
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -104,8 +147,8 @@ body {
   }
 }
 
-.sda{
+.sda {
   box-shadow: rgba(255, 254, 254) 20px 20px 1px;
-  
+
   --color-pdark_smoke: #83123e;
 }
