@@ -4,20 +4,28 @@ import type { footerVariant } from "~/types/types";
 interface FooterProps {
   footerVariant?: footerVariant;
 }
-  
-function Footer({footerVariant = "blanco"}: FooterProps) {
 
-  let lineaHoverColor = (footerVariant == "blanco" ? "black" : "white") 
-  
+function Footer({ footerVariant = "blanco" }: FooterProps) {
+  let lineaHoverColor = footerVariant == "blanco" ? "black" : "white";
+
   const variants: Record<footerVariant, string> = {
     blanco: "text-white bg-transparent dark:text-black dark:bg-white",
-    transparente: "text-white bg-transparent"
+    transparente: "text-white bg-transparent",
   };
+  /*
+
+
+  */
 
   return (
-    <div className={`flex flex-col w-full gap-8 px-24 py-4 footer lg:grid lg:grid-cols-6 ${variants[footerVariant]}`}>
+    <div
+      className={`flex flex-col w-full gap-8 px-24 py-4 footer lg:grid lg:grid-cols-6 ${variants[footerVariant]}`}
+    >
       <div className="flex items-center justify-center col-span-1 lg:justify-start">
-        <Logo variant={footerVariant == "blanco" ? "negro" : "transparente"} width="3rem" />
+        <Logo
+          variant={footerVariant == "blanco" ? "negro" : "transparente"}
+          width="3rem"
+        />
         <div>
           <p className="mx-1">Enterprise</p>
         </div>
@@ -51,13 +59,31 @@ function Footer({footerVariant = "blanco"}: FooterProps) {
       </div>
       <div className="flex justify-center w-full col-span-1 gap-8 lg:justify-end">
         <a href="" className="flex align-middle">
-          <img src={`iconos/RRSS/x${footerVariant == "transparente"? "2": ""}.svg`} alt="" className="w-8" />
+          <img
+            src={`iconos/RRSS/x${
+              footerVariant == "transparente" ? "2" : ""
+            }.svg`}
+            alt=""
+            className="w-8"
+          />
         </a>
         <a href="" className="flex align-middle">
-          <img src={`iconos/RRSS/youtube${footerVariant == "transparente"? "2": ""}.svg`} alt="" className="w-8" />
+          <img
+            src={`iconos/RRSS/youtube${
+              footerVariant == "transparente" ? "2" : ""
+            }.svg`}
+            alt=""
+            className="w-8"
+          />
         </a>
         <a href="" className="flex align-middle">
-          <img src={`iconos/RRSS/instagram${footerVariant == "transparente"? "2": ""}.svg`} alt="" className="w-8" />
+          <img
+            src={`iconos/RRSS/instagram${
+              footerVariant == "transparente" ? "2" : ""
+            }.svg`}
+            alt=""
+            className="w-8"
+          />
         </a>
       </div>
     </div>
